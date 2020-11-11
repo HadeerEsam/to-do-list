@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do-List</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <style>
+        .task-card{
+            border: 2px solid rgb(194, 193, 193);
+            border-radius: 10px;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body class=" bg-dark overflow-auto">
+
+    <section class="container bg-light rounded  py-5 mt-md-5  px-4">
+        <div class="row">
+            <div class="col-md-5">
+                <button id="addBtn" class="btn btn-info mb-3">Add Task</button>
+                <form id="taskForm"  class="d-none">
+                    <div class="form-group">
+                        <label for="taskName">Enter your task:</label>
+                        <input type="text" id="taskName" class="form-control">
+                        <p id="emptyErr" class="text-danger small d-none">Empty input enter a valid task.</p>
+                    </div>
+                    <button id="saveBtn" class="btn btn-info mb-3">Save Task</button>
+                </form>
+                <button id="updateBtn" class="btn btn-info mb-3 d-none">Update Task</button>
+            </div>
+            <div id="tasks" class="col-md-6 offset-md-1 ">
+                <!-- <div class="task-card">
+                    <p > <i class="text-success far fa-check-circle pr-2"></i>Do H.W play music cards go doooo</p>
+                    <div class="control text-right">
+                        <button class="btn btn-success ">Done</button>
+                        <button class="btn btn-warning ">Edit</button>
+                        <button class="btn btn-danger ">Remove</button>                      
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+    
+</body>
+</html>
