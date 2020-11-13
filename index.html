@@ -24,11 +24,12 @@
                     <div class="form-group">
                         <label for="taskName">Enter your task:</label>
                         <input type="text" id="taskName" class="form-control">
-                        <p id="emptyErr" class="text-danger small d-none">Empty input enter a valid task.</p>
+                        <p id="emptyErr" class="text-danger p-2 small d-none">Empty input enter a valid task.</p>
                     </div>
-                    <button id="saveBtn" class="btn btn-info mb-3">Save Task</button>
+                    <button id="formBtn" class="btn btn-info mb-3">Save Task</button>
                 </form>
-                <button id="updateBtn" class="btn btn-info mb-3 d-none">Update Task</button>
+                <p id="updateErr" class="text-danger p-2 d-none ">Can't update fineshed tasks</p>
+                
             </div>
             <div id="tasks" class="col-md-6 offset-md-1 ">
                 <!-- <div class="task-card">
